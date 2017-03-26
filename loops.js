@@ -8,3 +8,25 @@ function forLoop(array) {
   }
   return array
 }
+
+function whileLoop(n) {
+  let countdown = n;
+  while (countdown > 0) {
+    console.log(--countdown)
+  }
+  return('done')
+}
+
+function doWhileLoop(array) {
+  function maybeTrue() {
+    return Math.random() >= 0.5
+  }
+
+  do {
+    array = array.slice(1)
+  } while (array.length > 0 && maybeTrue())
+
+  return array
+
+}
+    
